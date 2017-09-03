@@ -9,12 +9,60 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Bootstrap 4 starter pack</h1>
+<body id="home">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+        <div class="container">
+            <a href="#index.html" class="navbar-brand">
+                <img src="img/mlogo.png" width="50" height="50" alt=""><h3 class="d-inline align-middle">Exceview</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#authors" class="nav-link">Meet the Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <p>vesrion 4.0.0-beta</p>
+    <!-- SHOWCASE -->
+    <section id="showcase" class="py-5">
+        <div class="primary-overlay text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="display-2 mt-5 pt-5">
+                            Do What You Dream Of
+                        </h1>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, corporis?</p>
+                        <a href="" class="btn btn-outlice-secondary btn-lg text-white"><i class="fa fa-arrow-right"></i>Read More</a>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/book.png" alt="" class="img-fluid d-none d-lg-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="btn btn-primary">go</button>
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar-fixed.js"></script>
 </body>
 </html>

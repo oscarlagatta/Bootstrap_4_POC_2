@@ -5,7 +5,11 @@ const sass = require("gulp-sass");
 // compile Sass & inject into brwoser
 gulp.task('sass', () => {
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'])
-        .pipe(sass())
+        .pipe(sass().on('error', function(err) {
+        console.error(err.message);
+        browserSync.notify(err.message, 3001); // Display error in the browser
+        this.emit('end'); // Prevent gulp from catching the error and exiting the watch process
+    }))
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream());
 });
